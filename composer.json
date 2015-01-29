@@ -1,0 +1,16 @@
+{
+    "name": "nailsapp/site-components",
+    "description": "The packagist.org of the Nails world.",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist"
+    },
+    "require":
+    {
+        "nailsapp/nails": "dev-develop",
+        "nailsapp/module-api": "dev-develop",
+        "rollbar/rollbar": "~0.9.8"
+    }
+}
