@@ -7,7 +7,8 @@ _APP = function()
     // --------------------------------------------------------------------------
 
     base.searchTimeout = null;
-    base.searchString = '';
+    base.searchDelay   = 750;
+    base.searchString  = '';
 
     // --------------------------------------------------------------------------
 
@@ -25,8 +26,10 @@ _APP = function()
 
         $('#search-term').on('keyup', function() {
 
-            //  If the string hasn't changed, don't do anything
-            if ($('#search-term').val() === base.searchString) {
+            var searchTerm = $.trim($('#search-term').val());
+
+            //  If the string hasn't changed, or it's empty, don't do anything
+            if (searchTerm.length ===0 || searchTerm === base.searchString) {
 
                 return;
             }
@@ -38,8 +41,13 @@ _APP = function()
             }
 
             //  Do the search
-            base.searchString  = $('#search-term').val();
-            base.searchTimeout = setTimeout(function() { base.doSearch(); }, 250);
+            $('#search-searching').addClass('searching');
+            base.searchString  = searchTerm;
+            base.searchTimeout = setTimeout(function() {
+
+                base.doSearch();
+
+            }, base.searchDelay);
         });
 
         $('#include-module, #include-driver, #include-skin').on('change', function()
@@ -50,7 +58,12 @@ _APP = function()
                 clearTimeout(base.searchTimeout);
             }
 
-            base.searchTimeout = setTimeout(function() { base.doSearch(); }, 250);
+            $('#search-searching').addClass('searching');
+            base.searchTimeout = setTimeout(function() {
+
+                base.doSearch();
+
+            }, base.searchDelay);
         });
     };
 
@@ -60,10 +73,10 @@ _APP = function()
 
         $('#search-results')
             .removeClass('no-results');
-        $('#search-searching')
-            .addClass('searching');
 
-        if ($('#search-term').val().length === 0) {
+        var searchTerm = $.trim($('#search-term').val());
+
+        if (searchTerm.length === 0) {
 
             $('#search-searching')
                 .removeClass('searching');
@@ -71,7 +84,7 @@ _APP = function()
         } else {
 
             var data = {
-                'term': $('#search-term').val(),
+                'term': searchTerm,
                 'include': {
                     'module': $('#include-module').is(':checked'),
                     'driver': $('#include-driver').is(':checked'),

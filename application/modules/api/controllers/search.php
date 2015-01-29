@@ -28,7 +28,7 @@ class Search extends NAILS_Api_Controller
             $types[] = 'skin';
         }
 
-        $searchData           = array('where' => array(), 'like' => array());
+        $searchData           = array('where_in' => array(), 'like' => array(), 'sort' => 'name');
         $searchData['like'][] = array('name', $term);
 
         if ($types) {

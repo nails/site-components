@@ -357,12 +357,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/common.git",
-                "reference": "11845c0a1a9deda9b1882abb0b652b222bd22f79"
+                "reference": "e949b2323ae9806532c717f619f8b7e222b7fe55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/common/zipball/11845c0a1a9deda9b1882abb0b652b222bd22f79",
-                "reference": "11845c0a1a9deda9b1882abb0b652b222bd22f79",
+                "url": "https://api.github.com/repos/nailsapp/common/zipball/e949b2323ae9806532c717f619f8b7e222b7fe55",
+                "reference": "e949b2323ae9806532c717f619f8b7e222b7fe55",
                 "shasum": ""
             },
             "require": {
@@ -394,7 +394,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-29 13:11:53"
+            "time": "2015-01-29 21:03:13"
         },
         {
             "name": "nailsapp/module-admin",
@@ -402,12 +402,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-admin.git",
-                "reference": "bae57ee027291be0058d4c937be22dba597c7008"
+                "reference": "11357ba6c9515cbf1e4d2b6480bd9f8491e300b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-admin/zipball/bae57ee027291be0058d4c937be22dba597c7008",
-                "reference": "bae57ee027291be0058d4c937be22dba597c7008",
+                "url": "https://api.github.com/repos/nailsapp/module-admin/zipball/11357ba6c9515cbf1e4d2b6480bd9f8491e300b6",
+                "reference": "11357ba6c9515cbf1e4d2b6480bd9f8491e300b6",
                 "shasum": ""
             },
             "require": {
@@ -450,7 +450,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-29 13:12:23"
+            "time": "2015-01-29 21:03:38"
         },
         {
             "name": "nailsapp/module-api",
@@ -458,12 +458,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-api.git",
-                "reference": "fbbd02e08d6e230ce9a74f436ea524b7a5606d22"
+                "reference": "908f61612ae87ec913777a6f02796befda8495d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-api/zipball/fbbd02e08d6e230ce9a74f436ea524b7a5606d22",
-                "reference": "fbbd02e08d6e230ce9a74f436ea524b7a5606d22",
+                "url": "https://api.github.com/repos/nailsapp/module-api/zipball/908f61612ae87ec913777a6f02796befda8495d1",
+                "reference": "908f61612ae87ec913777a6f02796befda8495d1",
                 "shasum": ""
             },
             "type": "library",
@@ -499,7 +499,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-28 16:55:06"
+            "time": "2015-01-29 21:04:00"
         },
         {
             "name": "nailsapp/module-asset",
@@ -507,12 +507,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-asset.git",
-                "reference": "f142b2bb85b2819c4d80faae8b421f238ffc085b"
+                "reference": "aa3d6d7642aa6ba605b8395bf893082d74c0d031"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-asset/zipball/f142b2bb85b2819c4d80faae8b421f238ffc085b",
-                "reference": "f142b2bb85b2819c4d80faae8b421f238ffc085b",
+                "url": "https://api.github.com/repos/nailsapp/module-asset/zipball/aa3d6d7642aa6ba605b8395bf893082d74c0d031",
+                "reference": "aa3d6d7642aa6ba605b8395bf893082d74c0d031",
                 "shasum": ""
             },
             "type": "library",
@@ -548,7 +548,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-29 13:13:22"
+            "time": "2015-01-29 21:04:12"
         },
         {
             "name": "nailsapp/module-auth",
@@ -716,12 +716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-email.git",
-                "reference": "67ca4039e0665a7d1d6a5390cf3321e2de150b4b"
+                "reference": "242e88e69a1c56382371c03b57a02ca5a8da35aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-email/zipball/67ca4039e0665a7d1d6a5390cf3321e2de150b4b",
-                "reference": "67ca4039e0665a7d1d6a5390cf3321e2de150b4b",
+                "url": "https://api.github.com/repos/nailsapp/module-email/zipball/242e88e69a1c56382371c03b57a02ca5a8da35aa",
+                "reference": "242e88e69a1c56382371c03b57a02ca5a8da35aa",
                 "shasum": ""
             },
             "require": {
@@ -760,7 +760,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-28 16:55:57"
+            "time": "2015-01-29 21:05:09"
         },
         {
             "name": "nailsapp/module-event",

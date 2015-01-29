@@ -418,6 +418,13 @@ img
 #component-search
 {
     min-height: 500px;
+
+    h1
+    {
+        font-size: 1.3em;
+        margin-bottom: 1.7em;
+        margin-top: 1.15em;
+    }
 }
 
 #search-searching
@@ -439,5 +446,57 @@ img
     {
         height: 75px;
         transition: height 0.5s;
+    }
+}
+
+#search-results
+{
+    li
+    {
+        .icon
+        {
+            margin-right: 0.5em;
+            display: none;
+
+            &.icon-home
+            {
+                display: inline-block;
+            }
+        }
+
+        &.type-module
+        {
+            .icon-module
+            {
+                display: inline-block;
+            }
+        }
+
+        &.type-driver
+        {
+            .icon-driver
+            {
+                display: inline-block;
+            }
+        }
+
+        &.type-skin
+        {
+            .icon-skin
+            {
+                display: inline-block;
+            }
+        }
+
+        .panel-body
+        {
+            p
+            {
+                &:last-of-type
+                {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }
