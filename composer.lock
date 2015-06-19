@@ -307,6 +307,82 @@
             "time": "2013-07-12 17:57:58"
         },
         {
+            "name": "monolog/monolog",
+            "version": "1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "b287fbbe1ca27847064beff2bad7fb6920bf08cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/b287fbbe1ca27847064beff2bad7fb6920bf08cc",
+                "reference": "b287fbbe1ca27847064beff2bad7fb6920bf08cc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "php-console/php-console": "^3.1.3",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "raven/raven": "~0.8",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "swiftmailer/swiftmailer": "~5.3",
+                "videlalvaro/php-amqplib": "~2.4"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "raven/raven": "Allow sending log messages to a Sentry server",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.14.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2015-06-19 13:29:54"
+        },
+        {
             "name": "mustache/mustache",
             "version": "v2.6.0",
             "source": {
@@ -357,15 +433,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/common.git",
-                "reference": "e949b2323ae9806532c717f619f8b7e222b7fe55"
+                "reference": "617cdb4ca2a04bb576a6422d1fd22ae36624c3e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/common/zipball/e949b2323ae9806532c717f619f8b7e222b7fe55",
-                "reference": "e949b2323ae9806532c717f619f8b7e222b7fe55",
+                "url": "https://api.github.com/repos/nailsapp/common/zipball/617cdb4ca2a04bb576a6422d1fd22ae36624c3e8",
+                "reference": "617cdb4ca2a04bb576a6422d1fd22ae36624c3e8",
                 "shasum": ""
             },
             "require": {
+                "monolog/monolog": "~1.13",
+                "rogeriopradoj/codeigniter": "2.2.1-rc.2",
                 "symfony/console": "~2.5.4"
             },
             "type": "library",
@@ -394,7 +472,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-29 21:03:13"
+            "time": "2015-06-15 17:38:12"
         },
         {
             "name": "nailsapp/module-admin",
@@ -402,12 +480,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-admin.git",
-                "reference": "11357ba6c9515cbf1e4d2b6480bd9f8491e300b6"
+                "reference": "c02a60056755993931903e1fc13a0492dde90a1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-admin/zipball/11357ba6c9515cbf1e4d2b6480bd9f8491e300b6",
-                "reference": "11357ba6c9515cbf1e4d2b6480bd9f8491e300b6",
+                "url": "https://api.github.com/repos/nailsapp/module-admin/zipball/c02a60056755993931903e1fc13a0492dde90a1f",
+                "reference": "c02a60056755993931903e1fc13a0492dde90a1f",
                 "shasum": ""
             },
             "require": {
@@ -450,7 +528,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-29 21:03:38"
+            "time": "2015-06-15 17:35:43"
         },
         {
             "name": "nailsapp/module-api",
@@ -458,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-api.git",
-                "reference": "908f61612ae87ec913777a6f02796befda8495d1"
+                "reference": "ced7b68a2cdcd0a47ae8f6902cf9b759b7fae835"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-api/zipball/908f61612ae87ec913777a6f02796befda8495d1",
-                "reference": "908f61612ae87ec913777a6f02796befda8495d1",
+                "url": "https://api.github.com/repos/nailsapp/module-api/zipball/ced7b68a2cdcd0a47ae8f6902cf9b759b7fae835",
+                "reference": "ced7b68a2cdcd0a47ae8f6902cf9b759b7fae835",
                 "shasum": ""
             },
             "type": "library",
@@ -499,7 +577,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-29 21:04:00"
+            "time": "2015-04-24 18:05:34"
         },
         {
             "name": "nailsapp/module-asset",
@@ -507,12 +585,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-asset.git",
-                "reference": "aa3d6d7642aa6ba605b8395bf893082d74c0d031"
+                "reference": "5c61e7ebe36c9fe649b3f4c06ef9b92bf16195b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-asset/zipball/aa3d6d7642aa6ba605b8395bf893082d74c0d031",
-                "reference": "aa3d6d7642aa6ba605b8395bf893082d74c0d031",
+                "url": "https://api.github.com/repos/nailsapp/module-asset/zipball/5c61e7ebe36c9fe649b3f4c06ef9b92bf16195b0",
+                "reference": "5c61e7ebe36c9fe649b3f4c06ef9b92bf16195b0",
                 "shasum": ""
             },
             "type": "library",
@@ -548,7 +626,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-29 21:04:12"
+            "time": "2015-06-16 17:55:18"
         },
         {
             "name": "nailsapp/module-auth",
@@ -556,12 +634,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-auth.git",
-                "reference": "c2592651b37101feecbd931753437e6208bc44c6"
+                "reference": "a8eebf3415767f24a1047115a65cfc5109508d34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-auth/zipball/c2592651b37101feecbd931753437e6208bc44c6",
-                "reference": "c2592651b37101feecbd931753437e6208bc44c6",
+                "url": "https://api.github.com/repos/nailsapp/module-auth/zipball/a8eebf3415767f24a1047115a65cfc5109508d34",
+                "reference": "a8eebf3415767f24a1047115a65cfc5109508d34",
                 "shasum": ""
             },
             "require": {
@@ -603,7 +681,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-29 13:13:45"
+            "time": "2015-06-08 10:07:14"
         },
         {
             "name": "nailsapp/module-cdn",
@@ -611,12 +689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-cdn.git",
-                "reference": "00e882a1dbe8fe6272fadb5055fe3fd631227779"
+                "reference": "ae8c1e60486118534ad69b2b428f98f45d49c285"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-cdn/zipball/00e882a1dbe8fe6272fadb5055fe3fd631227779",
-                "reference": "00e882a1dbe8fe6272fadb5055fe3fd631227779",
+                "url": "https://api.github.com/repos/nailsapp/module-cdn/zipball/ae8c1e60486118534ad69b2b428f98f45d49c285",
+                "reference": "ae8c1e60486118534ad69b2b428f98f45d49c285",
                 "shasum": ""
             },
             "require": {
@@ -659,7 +737,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-29 01:07:58"
+            "time": "2015-06-19 17:21:50"
         },
         {
             "name": "nailsapp/module-curl",
@@ -716,12 +794,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-email.git",
-                "reference": "242e88e69a1c56382371c03b57a02ca5a8da35aa"
+                "reference": "16f8c2db53d2811dbed4d7494f694e43d4c1c147"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-email/zipball/242e88e69a1c56382371c03b57a02ca5a8da35aa",
-                "reference": "242e88e69a1c56382371c03b57a02ca5a8da35aa",
+                "url": "https://api.github.com/repos/nailsapp/module-email/zipball/16f8c2db53d2811dbed4d7494f694e43d4c1c147",
+                "reference": "16f8c2db53d2811dbed4d7494f694e43d4c1c147",
                 "shasum": ""
             },
             "require": {
@@ -760,7 +838,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-29 21:05:09"
+            "time": "2015-06-12 07:16:49"
         },
         {
             "name": "nailsapp/module-event",
@@ -768,12 +846,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-event.git",
-                "reference": "5420c94c8a7d79521c43b3818112095b4142b78e"
+                "reference": "9f6133ad5077bf44843e92406f30ec465a3a9986"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-event/zipball/5420c94c8a7d79521c43b3818112095b4142b78e",
-                "reference": "5420c94c8a7d79521c43b3818112095b4142b78e",
+                "url": "https://api.github.com/repos/nailsapp/module-event/zipball/9f6133ad5077bf44843e92406f30ec465a3a9986",
+                "reference": "9f6133ad5077bf44843e92406f30ec465a3a9986",
                 "shasum": ""
             },
             "type": "library",
@@ -809,7 +887,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-28 16:56:04"
+            "time": "2015-02-26 23:15:57"
         },
         {
             "name": "nailsapp/module-pdf",
@@ -817,12 +895,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nailsapp/module-pdf.git",
-                "reference": "3617cb9e4f910e43f03c4befabd6d2b621256249"
+                "reference": "3e59cfe4d188771a22dc14f920fb0669bb3f9df6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nailsapp/module-pdf/zipball/3617cb9e4f910e43f03c4befabd6d2b621256249",
-                "reference": "3617cb9e4f910e43f03c4befabd6d2b621256249",
+                "url": "https://api.github.com/repos/nailsapp/module-pdf/zipball/3e59cfe4d188771a22dc14f920fb0669bb3f9df6",
+                "reference": "3e59cfe4d188771a22dc14f920fb0669bb3f9df6",
                 "shasum": ""
             },
             "require": {
@@ -861,7 +939,7 @@
                 "Shed Collective",
                 "codeigniter"
             ],
-            "time": "2015-01-28 13:03:15"
+            "time": "2015-02-12 17:39:14"
         },
         {
             "name": "nailsapp/nails",
@@ -954,17 +1032,80 @@
             "time": "2014-02-01 15:22:28"
         },
         {
-            "name": "rollbar/rollbar",
-            "version": "v0.9.9",
+            "name": "psr/log",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rollbar/rollbar-php.git",
-                "reference": "31f2c59355ab1733e788f6927290b9ae15229836"
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rollbar/rollbar-php/zipball/31f2c59355ab1733e788f6927290b9ae15229836",
-                "reference": "31f2c59355ab1733e788f6927290b9ae15229836",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "rogeriopradoj/codeigniter",
+            "version": "2.2.1-rc.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rogeriopradoj/codeigniter-composer.git",
+                "reference": "c3b605d2e5dc3752da7e6843daed31bcf87e225f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rogeriopradoj/codeigniter-composer/zipball/c3b605d2e5dc3752da7e6843daed31bcf87e225f",
+                "reference": "c3b605d2e5dc3752da7e6843daed31bcf87e225f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "A way to install CodeIgniter via composer",
+            "time": "2014-11-25 11:27:54"
+        },
+        {
+            "name": "rollbar/rollbar",
+            "version": "v0.9.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rollbar/rollbar-php.git",
+                "reference": "9b4c80cec8d9485fe0d7758cc98e820673ddea82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rollbar/rollbar-php/zipball/9b4c80cec8d9485fe0d7758cc98e820673ddea82",
+                "reference": "9b4c80cec8d9485fe0d7758cc98e820673ddea82",
                 "shasum": ""
             },
             "type": "library",
@@ -993,7 +1134,7 @@
                 "logging",
                 "monitoring"
             ],
-            "time": "2014-09-11 19:19:11"
+            "time": "2015-03-06 16:24:58"
         },
         {
             "name": "sonata-project/google-authenticator",
@@ -1139,17 +1280,17 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.5.9",
+            "version": "v2.5.12",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "754f4b6de7b4a1d442f9b6a728bfb7adef54592c"
+                "reference": "a43e750b4c74f3bdfca77c79c343033d35a6cd6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/754f4b6de7b4a1d442f9b6a728bfb7adef54592c",
-                "reference": "754f4b6de7b4a1d442f9b6a728bfb7adef54592c",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/a43e750b4c74f3bdfca77c79c343033d35a6cd6e",
+                "reference": "a43e750b4c74f3bdfca77c79c343033d35a6cd6e",
                 "shasum": ""
             },
             "require": {
@@ -1190,31 +1331,31 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-06 17:40:45"
+            "time": "2015-02-08 07:07:45"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.6.3",
-            "target-dir": "Symfony/Component/EventDispatcher",
+            "version": "v2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "40ff70cadea3785d83cac1c8309514b36113064e"
+                "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/40ff70cadea3785d83cac1c8309514b36113064e",
-                "reference": "40ff70cadea3785d83cac1c8309514b36113064e",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
+                "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.3.9"
             },
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~2.0,>=2.0.5",
                 "symfony/dependency-injection": "~2.6",
                 "symfony/expression-language": "~2.6",
+                "symfony/phpunit-bridge": "~2.7",
                 "symfony/stopwatch": "~2.3"
             },
             "suggest": {
@@ -1224,11 +1365,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\EventDispatcher\\": ""
                 }
             },
@@ -1238,17 +1379,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony EventDispatcher Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-01-05 14:28:40"
+            "homepage": "https://symfony.com",
+            "time": "2015-06-08 09:37:21"
         },
         {
             "name": "symfony/filesystem",
@@ -1306,6 +1447,7 @@
         "nailsapp/module-api": 20
     },
     "prefer-stable": true,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }
